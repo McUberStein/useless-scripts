@@ -10,7 +10,7 @@ elif any(srchstr in waifu for srchstr in ('megumin' , 'toga' , 'marin' , 'darkne
  print("You have good taste")
 elif any(srchstr in waifu for srchstr in ('komi' , 'speedwagon' , 'dio' , 'ishigami')):
  print("You are a god")
-elif any(srchstr in waifu for srchstr in ('chomosuke' , 'komeko' , 'melty' , 'malty' )):
+elif any(srchstr in waifu for srchstr in ('chomosuke' , 'komeko' , 'melty')):
  print("Bruh, what?")
  playsound.playsound('snd1.mp3')
 elif any(srchstr in waifu for srchstr in ('asuna' , 'sylvia' , 'mikasa')):
