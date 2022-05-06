@@ -26,21 +26,46 @@ int judgeChoice(){
 
 
 
-  if (strcmp(waifu,"wiz") == 0 ||
-      (strcmp(waifu,"albedo") == 0 ||
-            (strcmp(waifu,"megumin") == 0 ||
-            (strcmp(waifu,"horo") == 0))))
+  if (strcmp(waifu,"zerotwo") == 0 ||
+      (strcmp(waifu,"lucoa") == 0 ||
+       (strcmp(waifu,"marin") == 0||
+       (strcmp(waifu,"astolfo") ==0 ))))
+
     {
      printf("You are cultured\n");
+
+     libvlc_instance_t *player_instance;
+     player_instance = libvlc_new(0, NULL);
+     libvlc_media_t *soundfile;
+     libvlc_media_player_t *player;
+     soundfile = libvlc_media_new_path(player_instance, "snd/snd4.mp3");
+     player = libvlc_media_player_new_from_media(soundfile);
+     libvlc_media_player_play(player);
+     sleep(4);
+     libvlc_media_release(soundfile);
+     libvlc_media_player_release(player);
+     libvlc_release(player_instance);
+    }
+
+  else if (strcmp(waifu,"raphtalia") == 0 ||
+           (strcmp(waifu,"toga") == 0 ||
+            (strcmp(waifu,"albedo") == 0 ||
+             (strcmp(waifu,"darkness") == 0 ||
+              (strcmp(waifu,"horo") == 0 ||
+               (strcmp(waifu,"wiz") == 0 ||
+                 (strcmp(waifu,"aqua") ==0 )))))))
+
+    {
+     printf("You have good taste\n");
 
      /*libvlc_instance_t *player_instance;
      player_instance = libvlc_new(0, NULL);
      libvlc_media_t *soundfile;
      libvlc_media_player_t *player;
-     soundfile = libvlc_media_new_path(player_instance, "snd/snd2.mp3");
+     soundfile = libvlc_media_new_path(player_instance, "snd/snd4.mp3");
      player = libvlc_media_player_new_from_media(soundfile);
      libvlc_media_player_play(player);
-     sleep(9);
+     sleep(4);
      libvlc_media_release(soundfile);
      libvlc_media_player_release(player);
      libvlc_release(player_instance);*/
@@ -52,17 +77,17 @@ int judgeChoice(){
             {
               printf("You fucking donut\n");
 
-              /*libvlc_instance_t *player_instance;
+              libvlc_instance_t *player_instance;
               player_instance = libvlc_new(0, NULL);
               libvlc_media_t *soundfile;
               libvlc_media_player_t *player;
-              soundfile = libvlc_media_new_path(player_instance, "snd/snd2.mp3");
+              soundfile = libvlc_media_new_path(player_instance, "snd/snd5.mp3");
               player = libvlc_media_player_new_from_media(soundfile);
               libvlc_media_player_play(player);
-              sleep(9);
+              sleep(1);
               libvlc_media_release(soundfile);
               libvlc_media_player_release(player);
-              libvlc_release(player_instance); */
+              libvlc_release(player_instance);
             }
 
   else if (strcmp(waifu,"komi") == 0 ||
@@ -107,7 +132,27 @@ int judgeChoice(){
 
     }
 
-  else if (strcmp(waifu, "giorno") == 0)
+  else if (strcmp(waifu,"koneko") == 0 ||
+           (strcmp(waifu,"komeko") == 0 ||
+            (strcmp(waifu,"melty") == 0 ||
+             (strcmp(waifu,"kana") == 0 ))))
+    {
+      printf("Bruh, what?\n");
+
+      libvlc_instance_t *player_instance;
+      player_instance = libvlc_new(0, NULL);
+      libvlc_media_t *soundfile;
+      libvlc_media_player_t *player;
+      soundfile = libvlc_media_new_path(player_instance, "snd/snd1.mp3");
+      player = libvlc_media_player_new_from_media(soundfile);
+      libvlc_media_player_play(player);
+      sleep(60);
+      libvlc_media_release(soundfile);
+      libvlc_media_player_release(player);
+      libvlc_release(player_instance);
+    }
+
+ else if (strcmp(waifu, "giorno") == 0)
     {
       printf("GOLDEN WIND\n");
 
@@ -124,7 +169,12 @@ int judgeChoice(){
       libvlc_release(player_instance);
     }
 
-  else{
+  else if (strcmp(waifu,"exit") == 0)
+    {
+      exit(0);
+    }
+
+ else{
     printf("%s is not on the list\nPlease try again\n", waifu);
     return 1;
   }
@@ -140,7 +190,7 @@ int judgeChoice(){
 int main() {
 
   checkPoint:
-  printf("\nWho is your waifu? ");
+  printf("Who is your waifu? ");
   scanf ("%s", waifu);
   judgeChoice();
   goto checkPoint;
