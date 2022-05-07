@@ -318,7 +318,7 @@ int printArt() {
         c = fgetc(fptr);
       }
   }
-  else if (strcmp(waifu,"gabi") == 0){
+  else if (strcmp(waifu,"gabi_braun") == 0){
     FILE *fptr;
     char c;
     char file[] = "ascii/gabi";
