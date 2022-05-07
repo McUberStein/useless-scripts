@@ -4,8 +4,7 @@
 #include <unistd.h>
 #include <vlc/vlc.h>
 
-
-char waifu[10];
+char waifu[30];
 
 /*char *paths[] = {"./snd/snd1.mp3" , "./snd/snd2.mp3"};
 
@@ -26,9 +25,9 @@ int judgeChoice(){
 
 
 
-  if (strcmp(waifu,"zerotwo") == 0 ||
+  if (strcmp(waifu,"zero_two") == 0 ||
       (strcmp(waifu,"lucoa") == 0 ||
-       (strcmp(waifu,"marin") == 0||
+       (strcmp(waifu,"marin_kitagawa") == 0||
        (strcmp(waifu,"astolfo") ==0 ))))
 
     {
@@ -48,7 +47,7 @@ int judgeChoice(){
     }
 
   else if (strcmp(waifu,"raphtalia") == 0 ||
-           (strcmp(waifu,"toga") == 0 ||
+           (strcmp(waifu,"himiko_toga") == 0 ||
             (strcmp(waifu,"albedo") == 0 ||
              (strcmp(waifu,"darkness") == 0 ||
               (strcmp(waifu,"horo") == 0 ||
@@ -71,8 +70,8 @@ int judgeChoice(){
      libvlc_release(player_instance);*/
     }
 
-  else if (strcmp(waifu,"gabi") == 0 ||
-           (strcmp(waifu,"malty") == 0 ||
+  else if (strcmp(waifu,"gabi_braun") == 0 ||
+           (strcmp(waifu,"malty_melromarc") == 0 ||
             (strcmp(waifu,"ichigo") == 0)))
             {
               printf("You fucking donut\n");
@@ -90,10 +89,10 @@ int judgeChoice(){
               libvlc_release(player_instance);
             }
 
-  else if (strcmp(waifu,"komi") == 0 ||
+  else if (strcmp(waifu,"shouko_komi") == 0 ||
       (strcmp(waifu,"speedwagon") == 0 ||
-            (strcmp(waifu,"ishigami") == 0 ||
-            (strcmp(waifu,"dio") == 0))))
+            (strcmp(waifu,"yu_ishigami") == 0 ||
+            (strcmp(waifu,"dio_brando") == 0))))
     {
       printf("You are godlike\n");
 
@@ -111,7 +110,7 @@ int judgeChoice(){
     }
 
   else if (strcmp(waifu,"bismarck") == 0 ||
-           (strcmp(waifu,"eugen") == 0 ||
+           (strcmp(waifu,"prinz_eugen") == 0 ||
             (strcmp(waifu,"elbe") == 0 ||
              (strcmp(waifu,"friedrich") == 0 ||
               (strcmp(waifu, "selphius") == 0)))))
@@ -132,10 +131,10 @@ int judgeChoice(){
 
     }
 
-  else if (strcmp(waifu,"koneko") == 0 ||
-           (strcmp(waifu,"komeko") == 0 ||
-            (strcmp(waifu,"melty") == 0 ||
-             (strcmp(waifu,"kana") == 0 ))))
+  else if (strcmp(waifu,"toujou_koneko") == 0 ||
+           (strcmp(waifu,"komekko") == 0 ||
+            (strcmp(waifu,"melty_melromarc") == 0 ||
+             (strcmp(waifu,"kana_kobayashi") == 0 ))))
     {
       printf("Bruh, what?\n");
 
@@ -185,13 +184,360 @@ int judgeChoice(){
 }
 
 
+int printArt() {
+  if (strcmp(waifu,"zero_two") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/zero_two";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"lucoa") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/lucoa";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF){
+
+      printf("%c", c);
+      c = fgetc(fptr);
+    }
+  }
+
+  else if (strcmp(waifu,"marin_kitagawa") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/marin";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"astolfo") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/astolfo";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+      printf("%c", c);
+      c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"raphtalia") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/raphtalia";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"himiko_toga") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/toga";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"albedo") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/albedo";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+      printf("%c", c);
+      c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"darkness") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/darkness";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"horo") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/horo";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"wiz") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/wiz";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"aqua") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/aqua";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"gabi") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/gabi";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+
+  else if (strcmp(waifu,"malty_melromarc") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/malty";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"ichigo") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/ichigo";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"shouko_komi") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/komi";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"speedwagon") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/speedwagon";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+
+  }
+  else if (strcmp(waifu,"yu_ishigami") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/ishigami";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+
+      }
+  }
+  else if (strcmp(waifu,"dio_brando") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/dio";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"bismarck") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/bismarck";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"prinz_eugen") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/eugen";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"elbe") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/elbe";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"friedrich") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/friedrich";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+  else if (strcmp(waifu,"selphius") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/selphius";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+  }
+ else if (strcmp(waifu,"toujou_koneko") == 0){
+   FILE *fptr;
+   char c;
+   char file[] = "ascii/koneko";
+   fptr = fopen(file, "r");
+   c = fgetc(fptr);
+   while (c != EOF)
+     {
+       printf("%c", c);
+       c = fgetc(fptr);
+     }
+ }
+   else if (strcmp(waifu,"komekko") == 0){
+     FILE *fptr;
+     char c;
+     char file[] = "ascii/komekko";
+     fptr = fopen(file, "r");
+     c = fgetc(fptr);
+     while (c != EOF)
+       {
+         printf("%c", c);
+         c = fgetc(fptr);
+       }
+  }
+   else if (strcmp(waifu,"melty_melromarc") == 0){
+     FILE *fptr;
+     char c;
+     char file[] = "ascii/melty";
+     fptr = fopen(file, "r");
+     c = fgetc(fptr);
+     while (c != EOF)
+       {
+         printf("%c", c);
+         c = fgetc(fptr);
+       }
+   }
+   else if (strcmp(waifu,"kana_kobayashi") == 0){
+     FILE *fptr;
+     char c;
+     char file[] = "ascii/kana";
+     fptr = fopen(file, "r");
+     c = fgetc(fptr);
+     while (c != EOF)
+       {
+         printf("%c", c);
+         c = fgetc(fptr);
+       }
+   }
+   else if (strcmp(waifu,"giorno") == 0){
+     FILE *fptr;
+     char c;
+     char file[] = "ascii/giorno";
+     fptr = fopen(file, "r");
+     c = fgetc(fptr);
+     while (c != EOF)
+       {
+         printf("%c", c);
+         c = fgetc(fptr);
+       }
+   }
+  return 0;
+}
+
+
 
 
 int main() {
 
   checkPoint:
   printf("Who is your waifu? ");
-  scanf ("%s", waifu);
+  scanf("%s", waifu);
+
+  printArt();
   judgeChoice();
   goto checkPoint;
 
