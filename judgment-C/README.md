@@ -19,3 +19,6 @@ For example, if your waifu was Himiko Toga from BNHA, you would do `himiko_toga`
 
 # Images to ASCII
 Image to ASCII converter used:https://github.com/TheZoraiz/ascii-image-converter#cli-usage
+
+
+ASCII art resolution is very finicky.
