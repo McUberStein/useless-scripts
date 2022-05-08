@@ -2,7 +2,7 @@
 My attempt at rewritting judgment completely in C. Doesn't have as many options as the Python version yet, but I'm working on it.
 
 # Build
-To build, run `make`. Requires VLC.
+To build, run `make`. Requires VLC and on Debian-based distros the package `libvlc-dev`.
 
 # Usage
 To use, either download a binary or compile and run `./judgment` from this directory. Then simply input the name of your waifu. 
