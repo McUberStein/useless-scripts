@@ -145,7 +145,7 @@ int judgeChoice(){
       soundfile = libvlc_media_new_path(player_instance, "snd/snd1.mp3");
       player = libvlc_media_player_new_from_media(soundfile);
       libvlc_media_player_play(player);
-      sleep(60);
+      sleep(2);
       libvlc_media_release(soundfile);
       libvlc_media_player_release(player);
       libvlc_release(player_instance);
