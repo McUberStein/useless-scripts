@@ -52,7 +52,8 @@ int judgeChoice(){
              (strcmp(waifu,"darkness") == 0 ||
               (strcmp(waifu,"horo") == 0 ||
                (strcmp(waifu,"wiz") == 0 ||
-                 (strcmp(waifu,"aqua") ==0 )))))))
+                 (strcmp(waifu,"aqua") ==0 ||
+                  (strcmp(waifu,"megumin") == 0))))))))
 
     {
      printf("You have good taste\n");
@@ -196,6 +197,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Darling in the FranXX\n");
   }
   else if (strcmp(waifu,"lucoa") == 0){
     FILE *fptr;
@@ -208,8 +210,8 @@ int printArt() {
       printf("%c", c);
       c = fgetc(fptr);
     }
+    printf("Anime:Miss Kobayashi's Dragon Maid\n");
   }
-
   else if (strcmp(waifu,"marin_kitagawa") == 0){
     FILE *fptr;
     char c;
@@ -221,6 +223,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:My dress up darling\n");
   }
   else if (strcmp(waifu,"astolfo") == 0){
     FILE *fptr;
@@ -233,6 +236,7 @@ int printArt() {
       printf("%c", c);
       c = fgetc(fptr);
       }
+    printf("Anime:Fate\n");
   }
   else if (strcmp(waifu,"raphtalia") == 0){
     FILE *fptr;
@@ -245,6 +249,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:The Rising of The Shield Hero\n");
   }
   else if (strcmp(waifu,"himiko_toga") == 0){
     FILE *fptr;
@@ -257,6 +262,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:My Hero Academia\n");
   }
   else if (strcmp(waifu,"albedo") == 0){
     FILE *fptr;
@@ -266,9 +272,10 @@ int printArt() {
     c = fgetc(fptr);
     while (c != EOF)
       {
-      printf("%c", c);
-      c = fgetc(fptr);
+        printf("%c", c);
+        c = fgetc(fptr);
       }
+    printf("Anime:Overlord\n");
   }
   else if (strcmp(waifu,"darkness") == 0){
     FILE *fptr;
@@ -281,6 +288,20 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+   printf("Anime:KonoSuba\n");
+  }
+  else if (strcmp(waifu,"megumin") == 0){
+    FILE *fptr;
+    char c;
+    char file[] = "ascii/megumin";
+    fptr = fopen(file, "r");
+    c = fgetc(fptr);
+    while (c != EOF)
+      {
+        printf("%c", c);
+        c = fgetc(fptr);
+      }
+    printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"horo") == 0){
     FILE *fptr;
@@ -293,6 +314,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Spice and Wolf\n");
   }
   else if (strcmp(waifu,"wiz") == 0){
     FILE *fptr;
@@ -305,6 +327,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"aqua") == 0){
     FILE *fptr;
@@ -317,6 +340,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"gabi_braun") == 0){
     FILE *fptr;
@@ -329,6 +353,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Attack on Titan\n");
   }
 
   else if (strcmp(waifu,"malty_melromarc") == 0){
@@ -342,6 +367,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:The Rising of The Shield Hero\n");
   }
   else if (strcmp(waifu,"ichigo") == 0){
     FILE *fptr;
@@ -354,6 +380,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Darling in the FranXX\n");
   }
   else if (strcmp(waifu,"shouko_komi") == 0){
     FILE *fptr;
@@ -366,6 +393,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Komi can't communicate\n");
   }
   else if (strcmp(waifu,"speedwagon") == 0){
     FILE *fptr;
@@ -378,7 +406,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
-
+    printf("Anime:JoJo\n");
   }
   else if (strcmp(waifu,"yu_ishigami") == 0){
     FILE *fptr;
@@ -392,6 +420,7 @@ int printArt() {
         c = fgetc(fptr);
 
       }
+    printf("Anime:Love is War\n");
   }
   else if (strcmp(waifu,"dio_brando") == 0){
     FILE *fptr;
@@ -404,6 +433,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:JoJo\n");
   }
   else if (strcmp(waifu,"bismarck") == 0){
     FILE *fptr;
@@ -416,6 +446,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"prinz_eugen") == 0){
     FILE *fptr;
@@ -428,6 +459,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"elbe") == 0){
     FILE *fptr;
@@ -440,6 +472,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"friedrich") == 0){
     FILE *fptr;
@@ -452,6 +485,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"selphius") == 0){
     FILE *fptr;
@@ -464,6 +498,7 @@ int printArt() {
         printf("%c", c);
         c = fgetc(fptr);
       }
+    printf("Anime:none(real life)\n");
   }
  else if (strcmp(waifu,"toujou_koneko") == 0){
    FILE *fptr;
@@ -476,6 +511,7 @@ int printArt() {
        printf("%c", c);
        c = fgetc(fptr);
      }
+   printf("Anime:High School DxD\n");
  }
    else if (strcmp(waifu,"komekko") == 0){
      FILE *fptr;
@@ -488,7 +524,8 @@ int printArt() {
          printf("%c", c);
          c = fgetc(fptr);
        }
-  }
+     printf("Anime:KonoSuba\n");
+   }
    else if (strcmp(waifu,"melty_melromarc") == 0){
      FILE *fptr;
      char c;
@@ -500,6 +537,7 @@ int printArt() {
          printf("%c", c);
          c = fgetc(fptr);
        }
+     printf("Anime:The Rising of The Shield Hero\n");
    }
    else if (strcmp(waifu,"kana_kobayashi") == 0){
      FILE *fptr;
@@ -512,6 +550,7 @@ int printArt() {
          printf("%c", c);
          c = fgetc(fptr);
        }
+     printf("Anime:Miss Kobayashi's Dragon Maid\n");
    }
    else if (strcmp(waifu,"giorno") == 0){
      FILE *fptr;
@@ -524,6 +563,7 @@ int printArt() {
          printf("%c", c);
          c = fgetc(fptr);
        }
+     printf("Anime:JoJo");
    }
   return 0;
 }
