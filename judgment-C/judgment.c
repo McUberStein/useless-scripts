@@ -498,7 +498,7 @@ int printArt() {
          printf("%c", c);
          c = fgetc(fptr);
        }
-     printf("Anime:JoJo");
+     printf("Anime:JoJo\n");
    }
   return 0;
 }
