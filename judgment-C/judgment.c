@@ -25,6 +25,22 @@ int vlcPlay(char sndfile[13], int slpTime)
 }
 
 
+int printFile(char file[30]){
+  FILE *fptr;
+  char c;
+  char path[30] = "ascii/";
+  strncat(path, file, 30);
+  fptr = fopen(path, "r");
+  c = fgetc(fptr);
+  while (c != EOF)
+    {
+      printf("%c", c);
+      c = fgetc(fptr);
+    }
+
+  return 0;
+}
+
 
 int judgeChoice(){
 
@@ -38,7 +54,7 @@ int judgeChoice(){
     {
      printf("You are cultured\n");
 
-     vlcPlay("snd/snd4.mp3", 3);
+     vlcPlay("snd/snd4.mp3", 4);
 
     }
 
@@ -94,7 +110,7 @@ int judgeChoice(){
     {
       printf("Bruh, what?\n");
 
-      vlcPlay("snd/snd1.mp3", 9);
+      vlcPlay("snd/snd1.mp3", 2);
     }
 
  else if (strcmp(waifu, "giorno") == 0)
@@ -122,382 +138,120 @@ int judgeChoice(){
 
 int printArt() {
   if (strcmp(waifu,"zero_two") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/zero_two";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Darling in the FranXX\n");
   }
   else if (strcmp(waifu,"lucoa") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/lucoa";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF){
-
-      printf("%c", c);
-      c = fgetc(fptr);
-    }
+    printFile(waifu);
     printf("Anime:Miss Kobayashi's Dragon Maid\n");
   }
   else if (strcmp(waifu,"marin_kitagawa") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/marin";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:My dress up darling\n");
   }
   else if (strcmp(waifu,"astolfo") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/astolfo";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-      printf("%c", c);
-      c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Fate\n");
   }
   else if (strcmp(waifu,"raphtalia") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/raphtalia";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:The Rising of The Shield Hero\n");
   }
   else if (strcmp(waifu,"himiko_toga") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/toga";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:My Hero Academia\n");
   }
   else if (strcmp(waifu,"albedo") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/albedo";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Overlord\n");
   }
   else if (strcmp(waifu,"darkness") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/darkness";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
    printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"megumin") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/megumin";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"horo") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/horo";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Spice and Wolf\n");
   }
   else if (strcmp(waifu,"wiz") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/wiz";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"aqua") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/aqua";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:KonoSuba\n");
   }
   else if (strcmp(waifu,"gabi_braun") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/gabi";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Attack on Titan\n");
   }
 
   else if (strcmp(waifu,"malty_melromarc") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/malty";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:The Rising of The Shield Hero\n");
   }
   else if (strcmp(waifu,"ichigo") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/ichigo";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Darling in the FranXX\n");
   }
   else if (strcmp(waifu,"shouko_komi") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/komi";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Komi can't communicate\n");
   }
   else if (strcmp(waifu,"speedwagon") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/speedwagon";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:JoJo\n");
   }
   else if (strcmp(waifu,"yu_ishigami") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/ishigami";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-
-      }
+    printFile(waifu);
     printf("Anime:Love is War\n");
   }
   else if (strcmp(waifu,"dio_brando") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/dio";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:JoJo\n");
   }
   else if (strcmp(waifu,"bismarck") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/bismarck";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"prinz_eugen") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/eugen";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"elbe") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/elbe";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"friedrich") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/friedrich";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:Azur Lane\n");
   }
   else if (strcmp(waifu,"selphius") == 0){
-    FILE *fptr;
-    char c;
-    char file[] = "ascii/selphius";
-    fptr = fopen(file, "r");
-    c = fgetc(fptr);
-    while (c != EOF)
-      {
-        printf("%c", c);
-        c = fgetc(fptr);
-      }
+    printFile(waifu);
     printf("Anime:none(real life)\n");
   }
  else if (strcmp(waifu,"toujou_koneko") == 0){
-   FILE *fptr;
-   char c;
-   char file[] = "ascii/koneko";
-   fptr = fopen(file, "r");
-   c = fgetc(fptr);
-   while (c != EOF)
-     {
-       printf("%c", c);
-       c = fgetc(fptr);
-     }
+   printFile(waifu);
    printf("Anime:High School DxD\n");
  }
    else if (strcmp(waifu,"komekko") == 0){
-     FILE *fptr;
-     char c;
-     char file[] = "ascii/komekko";
-     fptr = fopen(file, "r");
-     c = fgetc(fptr);
-     while (c != EOF)
-       {
-         printf("%c", c);
-         c = fgetc(fptr);
-       }
+     printFile(waifu);
      printf("Anime:KonoSuba\n");
    }
    else if (strcmp(waifu,"melty_melromarc") == 0){
-     FILE *fptr;
-     char c;
-     char file[] = "ascii/melty";
-     fptr = fopen(file, "r");
-     c = fgetc(fptr);
-     while (c != EOF)
-       {
-         printf("%c", c);
-         c = fgetc(fptr);
-       }
+     printFile(waifu);
      printf("Anime:The Rising of The Shield Hero\n");
    }
    else if (strcmp(waifu,"kana_kobayashi") == 0){
-     FILE *fptr;
-     char c;
-     char file[] = "ascii/kana";
-     fptr = fopen(file, "r");
-     c = fgetc(fptr);
-     while (c != EOF)
-       {
-         printf("%c", c);
-         c = fgetc(fptr);
-       }
+     printFile(waifu);
      printf("Anime:Miss Kobayashi's Dragon Maid\n");
    }
    else if (strcmp(waifu,"giorno") == 0){
-     FILE *fptr;
-     char c;
-     char file[] = "ascii/giorno";
-     fptr = fopen(file, "r");
-     c = fgetc(fptr);
-     while (c != EOF)
-       {
-         printf("%c", c);
-         c = fgetc(fptr);
-       }
+     printFile(waifu);
      printf("Anime:JoJo\n");
    }
   return 0;
