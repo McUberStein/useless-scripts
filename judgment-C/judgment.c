@@ -6,19 +6,24 @@
 
 char waifu[30];
 
-/*char *paths[] = {"./snd/snd1.mp3" , "./snd/snd2.mp3"};
 
-int libvlcPlay() {
-
+int vlcPlay(char sndfile[13], int slpTime)
+{
   libvlc_instance_t *player_instance;
   player_instance = libvlc_new(0, NULL);
   libvlc_media_t *soundfile;
   libvlc_media_player_t *player;
-  soundfile = libvlc_media_new_path(player_instance, "path");
+  soundfile = libvlc_media_new_path(player_instance, sndfile);
   player = libvlc_media_player_new_from_media(soundfile);
   libvlc_media_player_play(player);
+  sleep (slpTime);
+  libvlc_media_release(soundfile);
+  libvlc_media_player_release(player);
+  libvlc_release(player_instance);
+
   return 0;
-}*/
+}
+
 
 
 int judgeChoice(){
@@ -33,17 +38,8 @@ int judgeChoice(){
     {
      printf("You are cultured\n");
 
-     libvlc_instance_t *player_instance;
-     player_instance = libvlc_new(0, NULL);
-     libvlc_media_t *soundfile;
-     libvlc_media_player_t *player;
-     soundfile = libvlc_media_new_path(player_instance, "snd/snd4.mp3");
-     player = libvlc_media_player_new_from_media(soundfile);
-     libvlc_media_player_play(player);
-     sleep(4);
-     libvlc_media_release(soundfile);
-     libvlc_media_player_release(player);
-     libvlc_release(player_instance);
+     vlcPlay("snd/snd4.mp3", 3);
+
     }
 
   else if (strcmp(waifu,"raphtalia") == 0 ||
@@ -58,17 +54,7 @@ int judgeChoice(){
     {
      printf("You have good taste\n");
 
-     /*libvlc_instance_t *player_instance;
-     player_instance = libvlc_new(0, NULL);
-     libvlc_media_t *soundfile;
-     libvlc_media_player_t *player;
-     soundfile = libvlc_media_new_path(player_instance, "snd/snd4.mp3");
-     player = libvlc_media_player_new_from_media(soundfile);
-     libvlc_media_player_play(player);
-     sleep(4);
-     libvlc_media_release(soundfile);
-     libvlc_media_player_release(player);
-     libvlc_release(player_instance);*/
+     /*vlcPlay(path, number)*/
     }
 
   else if (strcmp(waifu,"gabi_braun") == 0 ||
@@ -77,17 +63,7 @@ int judgeChoice(){
             {
               printf("You fucking donut\n");
 
-              libvlc_instance_t *player_instance;
-              player_instance = libvlc_new(0, NULL);
-              libvlc_media_t *soundfile;
-              libvlc_media_player_t *player;
-              soundfile = libvlc_media_new_path(player_instance, "snd/snd5.mp3");
-              player = libvlc_media_player_new_from_media(soundfile);
-              libvlc_media_player_play(player);
-              sleep(1);
-              libvlc_media_release(soundfile);
-              libvlc_media_player_release(player);
-              libvlc_release(player_instance);
+              vlcPlay("snd/snd5.mp3", 1);
             }
 
   else if (strcmp(waifu,"shouko_komi") == 0 ||
@@ -97,17 +73,7 @@ int judgeChoice(){
     {
       printf("You are godlike\n");
 
-      /*libvlc_instance_t *player_instance;
-      player_instance = libvlc_new(0, NULL);
-      libvlc_media_t *soundfile;
-      libvlc_media_player_t *player;
-      soundfile = libvlc_media_new_path(player_instance, "snd/snd2.mp3");
-      player = libvlc_media_player_new_from_media(soundfile);
-      libvlc_media_player_play(player);
-      sleep(9);
-      libvlc_media_release(soundfile);
-      libvlc_media_player_release(player);
-      libvlc_release(player_instance); */
+      /*vlcPlay(path, number);*/
     }
 
   else if (strcmp(waifu,"bismarck") == 0 ||
@@ -118,18 +84,7 @@ int judgeChoice(){
     {
       printf("Deutschland indeed\n");
 
-      libvlc_instance_t *player_instance;
-      player_instance = libvlc_new(0, NULL);
-      libvlc_media_t *soundfile;
-      libvlc_media_player_t *player;
-      soundfile = libvlc_media_new_path(player_instance, "snd/snd2.mp3");
-      player = libvlc_media_player_new_from_media(soundfile);
-      libvlc_media_player_play(player);
-      sleep(9);
-      libvlc_media_release(soundfile);
-      libvlc_media_player_release(player);
-      libvlc_release(player_instance);
-
+      vlcPlay("snd/snd2.mp3", 9);
     }
 
   else if (strcmp(waifu,"toujou_koneko") == 0 ||
@@ -139,34 +94,14 @@ int judgeChoice(){
     {
       printf("Bruh, what?\n");
 
-      libvlc_instance_t *player_instance;
-      player_instance = libvlc_new(0, NULL);
-      libvlc_media_t *soundfile;
-      libvlc_media_player_t *player;
-      soundfile = libvlc_media_new_path(player_instance, "snd/snd1.mp3");
-      player = libvlc_media_player_new_from_media(soundfile);
-      libvlc_media_player_play(player);
-      sleep(2);
-      libvlc_media_release(soundfile);
-      libvlc_media_player_release(player);
-      libvlc_release(player_instance);
+      vlcPlay("snd/snd1.mp3", 9);
     }
 
  else if (strcmp(waifu, "giorno") == 0)
     {
       printf("GOLDEN WIND\n");
 
-      libvlc_instance_t *player_instance;
-      player_instance = libvlc_new(0, NULL);
-      libvlc_media_t *soundfile;
-      libvlc_media_player_t *player;
-      soundfile = libvlc_media_new_path(player_instance, "snd/snd3.mp3");
-      player = libvlc_media_player_new_from_media(soundfile);
-      libvlc_media_player_play(player);
-      sleep(60);
-      libvlc_media_release(soundfile);
-      libvlc_media_player_release(player);
-      libvlc_release(player_instance);
+      vlcPlay("snd/snd3.mp3", 60);
     }
 
   else if (strcmp(waifu,"exit") == 0)
