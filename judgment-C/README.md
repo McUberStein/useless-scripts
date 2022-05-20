@@ -1,5 +1,5 @@
 # Judgment C
-My attempt at rewritting judgment completely in C. Doesn't have as many options as the Python version yet, but I'm working on it.
+My attempt at rewritting judgment completely in C. Plays sound and prints braille ASCII art. Works best with semi-transparent terminals, but works in TTYs as well. Some sounds may be louder than others.
 
 # Build
 To build, run `make`. Requires VLC and on Debian-based distros the package `libvlc-dev`.
@@ -16,9 +16,8 @@ For example, if your waifu was Himiko Toga from BNHA, you would do `himiko_toga`
 
 
 
-
 # Images to ASCII
 Image to ASCII converter used:https://github.com/TheZoraiz/ascii-image-converter#cli-usage
 
 
-ASCII art resolution is very finicky.
+
