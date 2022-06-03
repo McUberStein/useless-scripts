@@ -11,7 +11,7 @@ int main(void) {
 
   checkPoint:
   printf("Who is your waifu? ");
-  fgets(waifu, 30, stdin);
+  scanf("%s", waifu);
 
   if (strcmp(waifu, "exit") == 0)
     {
